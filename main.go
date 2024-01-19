@@ -8,8 +8,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/globusdigital/deep-copy/deepcopy"
 	"github.com/urfave/cli"
+	"github.com/xsean2020/deep-copy/deepcopy"
 	"golang.org/x/tools/go/packages"
 )
 

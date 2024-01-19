@@ -7,12 +7,12 @@ This tool generates deep copy methods for Go structs based on specific annotatio
 Install the DeepCopy generator tool using the following command:
 
 ```bash
-go get -u github.com/yourusername/deep-copy
+go get -u github.com/xsean2020/deep-copy
 ```
 ### Usage:
 Use the deep-copy command to generate deep copy methods with custom annotations:
 ```
-go run  github.com/yourusername/deep-copy --root .  
+go run  github.com/xsean2020/deep-copy --root .  
 ```
 ### Annotations
 -  @Copyable: Marks whether to generate deep copy methods.
