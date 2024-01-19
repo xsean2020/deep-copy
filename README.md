@@ -28,17 +28,18 @@ The generated deep copy methods will respect the specified annotations.
 package main
 
 // @copyable
+// @exportedonly  false
 type YourStruct struct {
 	// Struct fields definition
 	Field1 string
 	Field2 int
-	field3 int
+	field3 int //  be exported
 }
 
 // @copyable
 // @ptrrecv false
 // @name clone
-// exportedonly  true
+// @exportedonly  true
 type AnotherStruct struct {
 	// Struct fields definition
 	S  *YourStruct
@@ -68,6 +69,7 @@ func (o *YourStruct) DeepCopy() *YourStruct {
 	var val = *o
 	cp.Field1 = val.Field1
 	cp.Field2 = val.Field2
+	cp.field3 = val.field3
 	return &cp
 }
 
