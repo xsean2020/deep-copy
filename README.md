@@ -11,6 +11,7 @@ go get -u github.com/xsean2020/deep-copy
 ```
 ### Usage:
 Use the deep-copy command to generate deep copy methods with custom annotations:
+```bash
 go run -mod=mod github.com/xsean2020/deep-copy --root .
 ```
 ### Annotations
