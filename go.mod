@@ -1,6 +1,6 @@
 module github.com/xsean2020/deep-copy
 
-go 1.21.3
+go 1.21
 
 require (
 	github.com/fatih/structtag v1.2.0
